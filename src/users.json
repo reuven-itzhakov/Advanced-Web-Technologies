@@ -1,0 +1,85 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "username": "nofar",
+        "password": "1234",
+        "email": "nofar@gmail.com",
+        "phone": "050-1234567",
+        "name": "Nofar Bazak"
+      },
+      {
+        "id": 2,
+        "username": "user2",
+        "password": "securePass",
+        "email": "user2@example.com",
+        "phone": "052-9876543",
+        "name": "David Levi"
+      },
+      {
+        "id": 3,
+        "username": "user3",
+        "password": "qwerty123",
+        "email": "user3@example.com",
+        "phone": "053-7654321",
+        "name": "Rachel Mizrahi"
+      },
+      {
+        "id": 4,
+        "username": "user4",
+        "password": "Pa$$w0rd",
+        "email": "user4@example.com",
+        "phone": "054-1122334",
+        "name": "Yossi Azulay"
+      },
+      {
+        "id": 5,
+        "username": "user5",
+        "password": "abc123xyz",
+        "email": "user5@example.com",
+        "phone": "055-2233445",
+        "name": "Noa Shapiro"
+      },
+      {
+        "id": 6,
+        "username": "user6",
+        "password": "mySuperPass",
+        "email": "user6@example.com",
+        "phone": "056-3344556",
+        "name": "Elior Ben David"
+      },
+      {
+        "id": 7,
+        "username": "user7",
+        "password": "testpass789",
+        "email": "user7@example.com",
+        "phone": "057-4455667",
+        "name": "Tamar Katz"
+      },
+      {
+        "id": 8,
+        "username": "user8",
+        "password": "randomPass",
+        "email": "user8@example.com",
+        "phone": "058-5566778",
+        "name": "Omer Rosenberg"
+      },
+      {
+        "id": 9,
+        "username": "user9",
+        "password": "letMeIn123",
+        "email": "user9@example.com",
+        "phone": "059-6677889",
+        "name": "Shira Goldstein"
+      },
+      {
+        "id": 10,
+        "username": "user10",
+        "password": "newUserPass",
+        "email": "user10@example.com",
+        "phone": "050-7788990",
+        "name": "Daniel Peretz"
+      }
+    ]
+  }
+  

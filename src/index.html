@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tx2UML</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body class="light flex flex-col min-h-screen">
+    <header class="sticky top-0 bg-blue-500 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <a href="index.html" class="bg-white text-blue-500 px-4 py-2 rounded">Tx2UML</a>
+                <a href="signin.html" class="bg-white text-blue-500 px-4 py-2 rounded">Sign in</a>
+            </div>
+            <button id="theme-toggle" class="bg-white text-blue-500 px-4 py-2 rounded">Dark Mode</button>
+        </div>
+    </header>
+        
+    <main class="container mx-auto text-center py-20 flex-grow flex flex-col items-center justify-center">
+        <img src="darklogobg.png" class="mb-6" alt="LOGO">
+        <h2 class="text-3xl font-bold mb-6">Welcome to Class Diagram Generator</h2>
+        <button id="start-diagram" class="border-2 border-blue-500 text-blue-500 px-6 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-blue-500 hover:text-white">
+            Start Creating Diagram
+        </button>
+    </main>
+    <footer class="p-4">
+        <p>&copy; 2025 Tx2UML</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
