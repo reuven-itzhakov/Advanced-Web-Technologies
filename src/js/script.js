@@ -10,12 +10,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (body.classList.contains('dark')) {
             body.classList.remove('dark');
             body.classList.add('light');
-            toggleButton.textContent = 'Dark Mode';
+            toggleButton.innerHTML='<img src="https://cdn.discordapp.com/attachments/1258104265214398608/1360892335478804521/dark.png?ex=67fcc540&is=67fb73c0&hm=e2a8a7e5c77178a508c44ef019819aa45e8d029495f570a303d131d2c847dec3&" width="30" height="30" alt="Dark Mode Icon">'
             logo.src = 'darklogobg.png'; // Switch to dark logo
         } else {
             body.classList.remove('light');
             body.classList.add('dark');
-            toggleButton.textContent = 'Light Mode';
+            toggleButton.innerHTML ='<img src="https://cdn.discordapp.com/attachments/1258104265214398608/1360892335717617755/light.png?ex=67fcc540&is=67fb73c0&hm=84894b022393d591deb3ad61112db52dc9a022bd4aa75c88267f0f892c3ff22c&" width="30" height="30" alt="Light Mode Icon">'
             logo.src = 'lightlogobg.png'; // Switch to light logo
         }
     });
