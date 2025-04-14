@@ -29,9 +29,16 @@
         <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Save</button>
       </div>
       <canvas id="uml-canvas" class="border-2 border-blue-500 shadow-md w-full h-[600px]"></canvas>
-      <div class="mt-4">
+      <div class="mt-4 flex justify-between">
         <button class="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">Export</button>
-      </div>
+        <div class="relative group inline-block text-center">
+          <div class="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 hidden group-hover:block bg-gray-800 text-white text-sm rounded px-2 py-1 whitespace-nowrap z-10">
+            Don't how to write?<br>
+            Click here to see the syntax.
+          </div>
+          <button onclick="window.location.href='help.html';" class="bg-gray-400 text-white font-bold px-4 py-2 rounded hover:bg-gray-500">?</button>
+        </div>
+      </div>  
     </div>
 
     <!-- Right: Textarea Section -->

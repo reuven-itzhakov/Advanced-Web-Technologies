@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help - Tx2UML</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="light flex flex-col min-h-screen">
+    <header class="sticky top-0 bg-blue-500 text-white p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold">
+                <a href="index.html" class="text-2xl font-bold text-gray-800 hover:text-blue-600">TX2UML</a>
+            </h1>
+            <button id="theme-toggle" class="text-blue-500 px-1 py-1 m-0 rounded hover:bg-blue-100">
+                <img src="https://cdn.discordapp.com/attachments/1258104265214398608/1360892335478804521/dark.png?ex=67fcc540&is=67fb73c0&hm=e2a8a7e5c77178a508c44ef019819aa45e8d029495f570a303d131d2c847dec3&" width="30" height="30" alt="Dark Mode Icon" class="dark:hidden">
+            </button>
+        </div>
+    </header>
+    <main class="container mx-auto text-center py-10 flex-grow">
+        <h2 class="text-3xl font-bold mb-6">How to Use Tx2UML</h2>
+        <section class="text-left max-w-4xl mx-auto">
+            <h3 class="text-2xl font-semibold mb-4">Overview</h3>
+            <p class="mb-4">
+                Tx2UML is a tool designed to help you create class diagrams from text input. You can write your class definitions in a simple syntax, and the tool will generate a visual representation of your classes and their relationships.
+            </p>
+            <h3 class="text-2xl font-semibold mb-4">Features</h3>
+            <ul class="list-disc list-inside mb-4">
+                <li>Toggle between light and dark themes for better visibility.</li>
+                <li>Write class definitions in the text area and see the diagram generated on the canvas.</li>
+                <li>Save, edit, and export your diagrams.</li>
+                <li>Access syntax help and examples to get started quickly.</li>
+            </ul>
+            <h3 class="text-2xl font-semibold mb-4">Syntax Guide</h3>
+            <p class="mb-4">Use the following syntax to define your classes:</p>
+            <ul class="list-disc list-inside mb-4">
+                <li><strong>Class Definition:</strong> <code>a ClassName is a class</code></li>
+                <li><strong>Attributes:</strong> <code>ClassName has attribute1, attribute2, ..., attributeN</code></li>
+                <li><strong>Methods:</strong> <code>ClassName can method1, method2, ..., methodN</code></li>
+                <li><strong>Method Parameters:</strong> <code>when ClassName does method pass param1, param2, ..., paramN</code></li>
+                <li><strong>Inheritance:</strong> <code>a ClassName is a ParentClass</code></li>
+                <li><strong>Relationships:</strong> <code>one ClassA is related to many ClassB</code> (1-to-many), <code>one ClassA is related to one ClassB</code> (1-to-1)</li>
+                <li><strong>Connection Class:</strong> <code>for each ClassA and ClassB there is a ClassC</code></li>
+            </ul>
+            <h4 class="text-xl font-semibold mb-2">Example:</h4>
+            <pre class="bg-gray-100 p-4 rounded mb-4">
+a Person is a class.
+Person has name, age, height, weight.
+Person can jump, speak, run.
+when Person does jump pass howFar, howHigh.
+when Person does speak pass sentence.
+
+a Student is a Person.
+Student has major, yearStarted.
+Student can study.
+when Student does study pass subject.
+
+a Lecturer is a Person.
+Lecturer can teach.
+
+a Course is a class.
+a Grade is a class.
+Grade has grade, dateGiven.
+one Course is related to many Student.
+for each Course and Student there is a Grade.
+one Course is related to one Lecturer.
+            </pre>
+            <h3 class="text-2xl font-semibold mb-4">Steps to Create a Diagram</h3>
+            <ol class="list-decimal list-inside mb-4">
+                <li>Go to the <a href="app.html" class="text-blue-500 underline">diagram editor</a>.</li>
+                <li>Write your class definitions in the text area on the right.</li>
+                <li>Click the "Edit" or "Save" button to update or save your diagram.</li>
+                <li>Use the "Export" button to download your diagram as an image.</li>
+            </ol>
+            <h3 class="text-2xl font-semibold mb-4">Need More Help?</h3>
+            <p>If you have any questions or need further assistance, feel free to contact us at <a href="mailto:support@tx2uml.com" class="text-blue-500 underline">support@tx2uml.com</a>.</p>
+        </section>
+    </main>
+    <footer class="bg-blue-500 text-white p-4 shadow-md">
+        <p>&copy; 2025 Tx2UML</p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
